@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    font-family: var(--font-body);
+    color: var(--text-primary);
+    background-color: var(--bg-page);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-left: var(--space-12);
+    padding-right: var(--space-12);
+}
+
+.btn {
+  display: inline-block;
+  width: fit-content;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --text-xs:   clamp(0.6875rem, 1.5vw, 0.75rem);
+  --text-sm:   clamp(0.8125rem, 1.8vw, 0.875rem);
+  --text-base: clamp(0.9375rem, 2vw, 1rem);
+  --text-lg:   clamp(1.125rem, 2.5vw, 1.25rem);
+  --text-xl:   clamp(1.25rem, 3vw, 1.5625rem);
+  --text-2xl:  clamp(1.5rem, 3.5vw, 1.9375rem);
+  --text-3xl:  clamp(1.75rem, 4.5vw, 2.4375rem);
+  --text-4xl:  clamp(2rem, 5.5vw, 3.0625rem);
+  --text-5xl:  clamp(2.25rem, 6.5vw, 3.8125rem);
+
+  --font-display: 'Playfair Display', serif;
+  --font-body:    'DM Sans', sans-serif;
+
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+  --weight-black:    800;
+
+  --leading-tight:   1.1;
+  --leading-snug:    1.25;
+  --leading-normal:  1.5;
+  --leading-relaxed: 1.6;
+
+  --letter-tight:  -0.03em;
+  --letter-snug:   -0.02em;
+  --letter-normal:  0em;
+  --letter-wide:    0.08em;
+  --letter-wider:   0.12em;
+
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-25: 10rem;
+
+  --brand:       #c1440e;
+  --brand-dim:   #a33a0c;
+  --brand-glow:  rgba(193, 68, 14, 0.1);
+  --brand-light: #e8673a;
+
+  --bg-page:    #faf7f2;
+  --bg-surface: #f3ede3;
+  --bg-raised:  #ece4d6;
+
+  --neutral-900: #1c1410;
+  --neutral-700: #3d2e24;
+  --neutral-500: #7a6355;
+  --neutral-400: #9e8778;
+  --neutral-200: #c8b9ac;
+  --neutral-50:  #f0e9df;
+
+  --text-primary:   #1c1410;
+  --text-secondary: #7a6355;
+  --text-tertiary:  #9e8778;
+
+  --border:       #ddd3c5;
+  --border-light: rgba(28, 20, 16, 0.08);
+
+  --radius-sm:   0.375rem;
+  --radius-md:   0.75rem;
+  --radius-lg:   1rem;
+  --radius-full: 9999px;
+
+  --shadow-sm:   0 0.125rem 0.5rem rgba(28, 20, 16, 0.08);
+  --shadow-md:   0 0.25rem 1.5rem rgba(28, 20, 16, 0.12);
+  --shadow-glow: 0 0 2.5rem rgba(193, 68, 14, 0.12);
+}

@@ -295,28 +295,54 @@ html {
     align-items: center;
     padding-top: var(--space-25);
     padding-bottom: var(--space-24);
-    background-color: var(--bg-page);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero__bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.hero__bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero__bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(20, 12, 8, 0.85) 40%,
+        rgba(20, 12, 8, 0.3) 100%
+    );
 }
 
 .hero {
+    position: relative;
+    z-index: 1;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: var(--space-16);
 }
 
 .hero__content {
     display: flex;
     flex-direction: column;
     gap: var(--space-6);
-    max-width: 560px;
+    max-width: 580px;
+    margin-left: var(--space-12);
 }
 
 .hero__label {
     font-family: var(--font-body);
     font-size: var(--text-sm);
     font-weight: var(--weight-semibold);
-    color: var(--brand);
+    color: var(--brand-light);
     letter-spacing: var(--letter-wider);
     text-transform: uppercase;
 }
@@ -325,19 +351,15 @@ html {
     font-family: var(--font-display);
     font-size: var(--text-5xl);
     font-weight: var(--weight-black);
-    color: var(--text-primary);
+    color: #faf7f2;
     line-height: var(--leading-tight);
     letter-spacing: var(--letter-snug);
-}
-
-.text-brand {
-    color: var(--brand);
 }
 
 .hero__subtext {
     font-family: var(--font-body);
     font-size: var(--text-lg);
-    color: var(--text-secondary);
+    color: rgba(250, 247, 242, 0.75);
     line-height: var(--leading-relaxed);
     max-width: 48ch;
 }
@@ -348,19 +370,14 @@ html {
     align-items: center;
 }
 
-.hero__image {
-    width: 45%;
-    flex-shrink: 0;
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    box-shadow: var(--shadow-md);
+.btn--outline {
+    color: #faf7f2;
+    border: 2px solid rgba(250, 247, 242, 0.8);
 }
 
-.hero__image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: var(--radius-lg);
+.btn--outline:hover {
+    background-color: rgba(250, 247, 242, 0.15);
+    border-color: #faf7f2;
 }
 
 /* About Section */
@@ -380,13 +397,14 @@ html {
     border-radius: var(--radius-lg);
     overflow: hidden;
     box-shadow: var(--shadow-md);
+    height: 550px;
 }
 
 .about__image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: var(--radius-lg);
+    object-position: center;
 }
 
 .about__content {

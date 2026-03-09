@@ -6,7 +6,7 @@ design, CSS animations, and clean component structure.
 
 ## Live Demo
 
-[View Live](#)
+[View Live](https://brewed-cafe.netlify.app/)
 
 ## Built With
 

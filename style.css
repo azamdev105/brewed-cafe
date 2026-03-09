@@ -245,6 +245,10 @@ html {
     text-transform: uppercase;
 }
 
+.nav__links a.active {
+    color: var(--brand);
+}
+
 .nav__links a:hover {
     color: var(--brand);
 }
@@ -569,6 +573,16 @@ html {
     border-radius: var(--radius-lg);
 }
 
+.experience__card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.experience__card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-md);
+    border-color: rgba(193, 68, 14, 0.3);
+}
+
 .experience__icon {
     width: 56px;
     height: 56px;
@@ -816,6 +830,16 @@ html {
     gap: var(--space-4);
 }
 
+.contact__card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.contact__card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-glow);
+    border-color: rgba(193, 68, 14, 0.3);
+}
+
 .contact__icon {
     width: 48px;
     height: 48px;
@@ -965,9 +989,37 @@ html {
 .reveal-delay-3 { transition-delay: 0.3s; }
 .reveal-delay-4 { transition-delay: 0.4s; }
 
+.scroll-top {
+    position: fixed;
+    bottom: var(--space-8);
+    right: var(--space-8);
+    width: 44px;
+    height: 44px;
+    background-color: var(--brand);
+    color: #ffffff;
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--text-lg);
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 999;
+    box-shadow: var(--shadow-md);
+}
 
+.scroll-top.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
-/*  */
+.scroll-top:hover {
+    background-color: var(--brand-dim);
+}
+
+/* Media Queries */
 @media(max-width: 1024px) {
     .hero-section {
         padding-top: var(--space-16);

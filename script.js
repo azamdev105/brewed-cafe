@@ -39,3 +39,37 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 
 document.querySelectorAll('.reveal, .reveal-rotate, .reveal-scale').forEach(el => observer.observe(el));
+
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav__links a');
+
+window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (window.scrollY >= sectionTop) {
+            current = section.getAttribute('id');
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active');
+        }
+    });
+});
+
+const scrollTop = document.querySelector('#scrollTop');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 500) {
+        scrollTop.classList.add('visible');
+    } else {
+        scrollTop.classList.remove('visible');
+    }
+});
+
+scrollTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});

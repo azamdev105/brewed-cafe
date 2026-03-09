@@ -968,7 +968,41 @@ html {
 
 
 /*  */
-@media(max-width: 900px) {
+@media(max-width: 1024px) {
+    .hero-section {
+        padding-top: var(--space-16);
+        padding-bottom: var(--space-16);
+    }
+
+    .hero__content {
+        margin-left: 0;
+    }
+
+    .menu__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer__links {
+        gap: var(--space-8);
+    }
+}
+
+@media(max-width: 800px) {
+    .hero-section {
+        min-height: 50vh;
+        padding-top: var(--space-25);
+        padding-bottom: var(--space-20);
+    }
+
+    .hero__bg img {
+        object-position: top;
+    }
+
+    .container {
+        padding-left: var(--space-6);
+        padding-right: var(--space-6);
+    }
+
     .hideOnMobile {
         display: none;
     }
@@ -980,5 +1014,98 @@ html {
     .nav__links {
         position: static;
         transform: none;
+    }
+
+    .hero-section {
+        padding-top: var(--space-12);
+        padding-bottom: var(--space-12);
+    }
+
+    .hero__heading {
+        font-size: var(--text-4xl);
+    }
+
+    .hero__subtext {
+        font-size: var(--text-base);
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .about__image {
+        height: 400px;
+    }
+
+    .menu__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery__item--large {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+
+    .gallery__item--large img {
+        height: 250px;
+    }
+
+    .testimonials__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__top {
+        flex-direction: column;
+        gap: var(--space-8);
+    }
+
+    .footer__links {
+        gap: var(--space-8);
+    }
+}
+
+@media(max-width: 480px) {
+    .hero__heading {
+        font-size: var(--text-3xl);
+    }
+
+    .hero__cta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about__image {
+        height: 300px;
+    }
+
+    .gallery__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery__item--large {
+        grid-column: span 1;
+    }
+
+    .footer__links {
+        flex-direction: column;
+        gap: var(--space-6);
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+        gap: var(--space-2);
+        text-align: center;
     }
 }

@@ -1019,6 +1019,7 @@ html {
     background-color: var(--brand-dim);
 }
 
+
 /* Media Queries */
 @media(max-width: 1024px) {
     .hero-section {
@@ -1039,11 +1040,20 @@ html {
     }
 }
 
+
+    
 @media(max-width: 800px) {
     .hero-section {
-        min-height: 60vh;
-        padding-top: var(--space-25);
-        padding-bottom: var(--space-20);
+        min-height: auto;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .hero__content {
+        margin-left: 0;
+        padding-top: 100px;
+        padding-bottom: var(--space-12);
+        gap: var(--space-8);
     }
 
     .hero__bg img {
@@ -1066,11 +1076,6 @@ html {
     .nav__links {
         position: static;
         transform: none;
-    }
-
-    .hero-section {
-        padding-top: var(--space-12);
-        padding-bottom: var(--space-12);
     }
 
     .hero__heading {

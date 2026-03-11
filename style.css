@@ -1041,7 +1041,7 @@ html {
 
 @media(max-width: 800px) {
     .hero-section {
-        min-height: 50vh;
+        min-height: 60vh;
         padding-top: var(--space-25);
         padding-bottom: var(--space-20);
     }

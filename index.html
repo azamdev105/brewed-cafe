@@ -7,10 +7,15 @@
     <title>Brewed — Where Every Cup Tells a Story</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" media="print"
+        onload="this.media='all'">
+    <noscript>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet">
+    </noscript>
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
 </head>
@@ -48,7 +53,7 @@
     <main>
         <section class="hero-section" id="home">
             <div class="hero__bg">
-                <img src="./images/hero-img.webp" alt="Brewed Café">
+                <img src="./images/hero-img.webp" alt="Brewed Café" fetchpriority="high" decoding="sync">
             </div>
             <div class="container">
                 <div class="hero">
@@ -69,7 +74,7 @@
             <div class="container">
                 <div class="about">
                     <div class="about__image reveal-scale">
-                        <img src="./images/about-img.webp" alt="Inside Brewed Café">
+                        <img src="./images/about-img.webp" alt="Inside Brewed Café" loading="lazy" decoding="async">
                     </div>
                     <div class="about__content reveal reveal-delay-1">
                         <span class="section-label">Our Story</span>
@@ -96,7 +101,8 @@
                     <div class="menu__grid">
                         <div class="menu-card reveal reveal-delay-1">
                             <div class="menu-card__image">
-                                <img src="./images/menu-espresso.webp" alt="Signature Espresso">
+                                <img src="./images/menu-espresso.webp" alt="Signature Espresso" loading="lazy"
+                                    decoding="async">
                             </div>
                             <div class="menu-card__content">
                                 <div class="menu-card__top">
@@ -109,7 +115,8 @@
                         </div>
                         <div class="menu-card reveal reveal-delay-2">
                             <div class="menu-card__image">
-                                <img src="./images/menu-latte.webp" alt="Honey Oat Latte">
+                                <img src="./images/menu-latte.webp" alt="Honey Oat Latte" loading="lazy"
+                                    decoding="async">
                             </div>
                             <div class="menu-card__content">
                                 <div class="menu-card__top">
@@ -122,7 +129,7 @@
                         </div>
                         <div class="menu-card reveal reveal-delay-3">
                             <div class="menu-card__image">
-                                <img src="./images/menu-toast.webp" alt="Avocado Toast">
+                                <img src="./images/menu-toast.webp" alt="Avocado Toast" loading="lazy" decoding="async">
                             </div>
                             <div class="menu-card__content">
                                 <div class="menu-card__top">
@@ -135,7 +142,8 @@
                         </div>
                         <div class="menu-card reveal reveal-delay-4">
                             <div class="menu-card__image">
-                                <img src="./images/menu-cheesecake.webp" alt="Basque Cheesecake">
+                                <img src="./images/menu-cheesecake.webp" alt="Basque Cheesecake" loading="lazy"
+                                    decoding="async">
                             </div>
                             <div class="menu-card__content">
                                 <div class="menu-card__top">
@@ -189,19 +197,20 @@
                     </div>
                     <div class="gallery__grid">
                         <div class="gallery__item gallery__item--large reveal-scale">
-                            <img src="./images/gallery-1.webp" alt="Brewed Café Interior">
+                            <img src="./images/gallery-1.webp" alt="Brewed Café Interior" loading="lazy"
+                                decoding="async">
                         </div>
                         <div class="gallery__item reveal-scale reveal-delay-1">
-                            <img src="./images/gallery-2.webp" alt="Barista">
+                            <img src="./images/gallery-2.webp" alt="Barista" loading="lazy" decoding="async">
                         </div>
                         <div class="gallery__item reveal-scale reveal-delay-2">
-                            <img src="./images/gallery-3.webp" alt="Latte Art">
+                            <img src="./images/gallery-3.webp" alt="Latte Art" loading="lazy" decoding="async">
                         </div>
                         <div class="gallery__item reveal-scale reveal-delay-3">
-                            <img src="./images/gallery-4.webp" alt="Café Food">
+                            <img src="./images/gallery-4.webp" alt="Café Food" loading="lazy" decoding="async">
                         </div>
                         <div class="gallery__item reveal-scale reveal-delay-4">
-                            <img src="./images/gallery-5.webp" alt="Café Corner">
+                            <img src="./images/gallery-5.webp" alt="Café Corner" loading="lazy" decoding="async">
                         </div>
                     </div>
                 </div>
@@ -222,7 +231,7 @@
                                 alone is worth the trip — I've never found anything like it anywhere else in KL."</p>
                             <div class="testimonial-card__author">
                                 <img src="https://ui-avatars.com/api/?name=Sarah+Lim&background=ece4d6&color=c1440e&size=48&bold=true"
-                                    alt="Sarah Lim">
+                                    alt="Sarah Lim" loading="lazy">
                                 <div class="testimonial-card__info">
                                     <span class="testimonial-card__name">Sarah Lim</span>
                                     <span class="testimonial-card__role">Regular since 2019</span>
@@ -234,7 +243,7 @@
                                 quiet, never rushed. The avocado toast is the best I've had — and I've had a lot."</p>
                             <div class="testimonial-card__author">
                                 <img src="https://ui-avatars.com/api/?name=Marcus+Tan&background=ece4d6&color=c1440e&size=48&bold=true"
-                                    alt="Marcus Tan">
+                                    alt="Marcus Tan" loading="lazy">
                                 <div class="testimonial-card__info">
                                     <span class="testimonial-card__name">Marcus Tan</span>
                                     <span class="testimonial-card__role">Food Blogger, KL Eats</span>
@@ -247,7 +256,7 @@
                                 back."</p>
                             <div class="testimonial-card__author">
                                 <img src="https://ui-avatars.com/api/?name=Priya+Nair&background=ece4d6&color=c1440e&size=48&bold=true"
-                                    alt="Priya Nair">
+                                    alt="Priya Nair" loading="lazy">
                                 <div class="testimonial-card__info">
                                     <span class="testimonial-card__name">Priya Nair</span>
                                     <span class="testimonial-card__role">Product Manager, Nimbux</span>
@@ -335,8 +344,8 @@
             </div>
         </div>
     </footer>
-    <button class="scroll-top" id="scrollTop">
-        <i class="ri-arrow-up-line"></i>
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="ri-arrow-up-line" aria-hidden="true"></i>
     </button>
 </body>
 

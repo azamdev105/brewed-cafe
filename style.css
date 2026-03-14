@@ -772,7 +772,7 @@ html {
 .testimonial-card__role {
     font-family: var(--font-body);
     font-size: var(--text-xs);
-    color: var(--text-tertiary);
+    color: var(--text-secondary);
 }
 
 /* Contact Section */
@@ -828,9 +828,6 @@ html {
     display: flex;
     flex-direction: column;
     gap: var(--space-4);
-}
-
-.contact__card {
     transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
@@ -901,7 +898,7 @@ html {
 .footer__tagline {
     font-family: var(--font-body);
     font-size: var(--text-sm);
-    color: var(--text-tertiary);
+    color: var(--text-secondary);
     line-height: var(--leading-relaxed);
 }
 
@@ -929,7 +926,7 @@ html {
 .footer__col a {
     font-family: var(--font-body);
     font-size: var(--text-sm);
-    color: var(--text-tertiary);
+    color: var(--text-secondary);
     transition: color 0.2s ease;
 }
 
@@ -947,9 +944,8 @@ html {
 .footer__copyright {
     font-family: var(--font-body);
     font-size: var(--text-sm);
-    color: var(--text-tertiary);
+    color: var(--text-secondary);
 }
-
 
 .reveal {
     opacity: 0;
@@ -1019,7 +1015,6 @@ html {
     background-color: var(--brand-dim);
 }
 
-
 /* Media Queries */
 @media(max-width: 1024px) {
     .hero-section {
@@ -1040,8 +1035,6 @@ html {
     }
 }
 
-
-    
 @media(max-width: 800px) {
     .hero-section {
         min-height: auto;

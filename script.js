@@ -29,6 +29,7 @@ sidebarLinks.forEach(link => {
     });
 });
 
+// threshold lowered from 0.1 to 0.05 — elements reveal sooner, less delay when scrolling
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -36,7 +37,7 @@ const observer = new IntersectionObserver((entries) => {
             observer.unobserve(entry.target);
         }
     });
-}, { threshold: 0.1 });
+}, { threshold: 0.05, rootMargin: '0px 0px -40px 0px' });
 
 document.querySelectorAll('.reveal, .reveal-rotate, .reveal-scale').forEach(el => observer.observe(el));
 

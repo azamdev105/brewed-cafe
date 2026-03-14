@@ -61,23 +61,5 @@ window.addEventListener('scroll', () => {
     });
 });
 
-const scrollTop = document.querySelector('#scrollTop');
-
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 500) {
-        scrollTop.classList.add('visible');
-    } else {
-        scrollTop.classList.remove('visible');
-    }
-});
-
-scrollTop.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-});
-
 const heroImg = document.querySelector('.hero__bg img');
-if (heroImg.complete) {
-    heroImg.classList.add('loaded');
-} else {
-    heroImg.addEventListener('load', () => heroImg.classList.add('loaded'));
-}
+heroImg.classList.add('loaded');

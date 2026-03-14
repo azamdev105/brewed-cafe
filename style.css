@@ -307,6 +307,7 @@ html {
     position: absolute;
     inset: 0;
     z-index: 0;
+    background-color: #1a0f0a;
 }
 
 .hero__bg img {
@@ -314,6 +315,12 @@ html {
     height: 100%;
     object-fit: cover;
     object-position: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.hero__bg img.loaded {
+    opacity: 1;
 }
 
 .hero__bg::after {
@@ -571,9 +578,6 @@ html {
     background-color: var(--bg-raised);
     border: 1px solid var(--border);
     border-radius: var(--radius-lg);
-}
-
-.experience__card {
     transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
@@ -949,8 +953,8 @@ html {
 
 .reveal {
     opacity: 0;
-    transform: translateY(24px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
+    transform: translateY(12px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .reveal.visible {
@@ -960,8 +964,8 @@ html {
 
 .reveal-rotate {
     opacity: 0;
-    transform: translateY(20px) rotate(-1deg);
-    transition: opacity 0.7s ease, transform 0.7s ease;
+    transform: translateY(10px) rotate(-0.5deg);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .reveal-rotate.visible {
@@ -971,8 +975,8 @@ html {
 
 .reveal-scale {
     opacity: 0;
-    transform: scale(0.95);
-    transition: opacity 0.6s ease, transform 0.6s ease;
+    transform: scale(0.98);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .reveal-scale.visible {
@@ -980,10 +984,10 @@ html {
     transform: scale(1);
 }
 
-.reveal-delay-1 { transition-delay: 0.1s; }
-.reveal-delay-2 { transition-delay: 0.2s; }
-.reveal-delay-3 { transition-delay: 0.3s; }
-.reveal-delay-4 { transition-delay: 0.4s; }
+.reveal-delay-1 { transition-delay: 0.05s; }
+.reveal-delay-2 { transition-delay: 0.1s; }
+.reveal-delay-3 { transition-delay: 0.15s; }
+.reveal-delay-4 { transition-delay: 0.2s; }
 
 .scroll-top {
     position: fixed;

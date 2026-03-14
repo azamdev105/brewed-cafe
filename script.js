@@ -74,3 +74,10 @@ window.addEventListener('scroll', () => {
 scrollTop.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+const heroImg = document.querySelector('.hero__bg img');
+if (heroImg.complete) {
+    heroImg.classList.add('loaded');
+} else {
+    heroImg.addEventListener('load', () => heroImg.classList.add('loaded'));
+}

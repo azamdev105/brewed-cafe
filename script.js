@@ -29,18 +29,6 @@ sidebarLinks.forEach(link => {
     });
 });
 
-// threshold lowered from 0.1 to 0.05 — elements reveal sooner, less delay when scrolling
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-        }
-    });
-}, { threshold: 0.05, rootMargin: '0px 0px -40px 0px' });
-
-document.querySelectorAll('.reveal, .reveal-rotate, .reveal-scale').forEach(el => observer.observe(el));
-
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav__links a');
 
@@ -61,5 +49,16 @@ window.addEventListener('scroll', () => {
     });
 });
 
-const heroImg = document.querySelector('.hero__bg img');
-heroImg.classList.add('loaded');
+const scrollTop = document.querySelector('#scrollTop');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 500) {
+        scrollTop.classList.add('visible');
+    } else {
+        scrollTop.classList.remove('visible');
+    }
+});
+
+scrollTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});

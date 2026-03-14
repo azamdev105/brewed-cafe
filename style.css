@@ -131,7 +131,6 @@ html {
   --shadow-glow: 0 0 2.5rem rgba(193, 68, 14, 0.12);
 }
 
-/* Sidebar */
 .sidebar {
     flex-direction: column;
     position: fixed;
@@ -199,7 +198,6 @@ html {
     z-index: 9998;
 }
 
-/* Nav */
 .header {
     position: fixed;
     top: 0;
@@ -292,7 +290,6 @@ html {
     cursor: pointer;
 }
 
-/* Hero Section */
 .hero-section {
     min-height: 100vh;
     display: flex;
@@ -315,10 +312,6 @@ html {
     height: 100%;
     object-fit: cover;
     object-position: center;
-}
-
-.hero__bg img.loaded {
-    opacity: 1;
 }
 
 .hero__bg::after {
@@ -389,10 +382,9 @@ html {
     border-color: #faf7f2;
 }
 
-/* About Section */
 .about-section {
     padding-block: var(--space-24);
-    background-color: var(--bg-surface);
+    background: linear-gradient(160deg, var(--bg-surface) 0%, var(--bg-raised) 100%);
 }
 
 .about {
@@ -448,10 +440,9 @@ html {
     max-width: 52ch;
 }
 
-/* Menu Section */
 .menu-section {
     padding-block: var(--space-24);
-    background-color: var(--bg-page);
+    background: linear-gradient(180deg, var(--bg-page) 0%, var(--bg-surface) 100%);
 }
 
 .menu {
@@ -554,10 +545,9 @@ html {
     line-height: var(--leading-relaxed);
 }
 
-/* Experience Section */
 .experience-section {
     padding-block: var(--space-24);
-    background-color: var(--bg-surface);
+    background: linear-gradient(180deg, var(--bg-surface) 0%, var(--bg-raised) 100%);
 }
 
 .experience {
@@ -613,10 +603,9 @@ html {
     max-width: 30ch;
 }
 
-/* Gallery Section */
 .gallery-section {
     padding-block: var(--space-24);
-    background-color: var(--bg-page);
+    background: linear-gradient(180deg, var(--bg-page) 0%, var(--bg-surface) 60%, var(--bg-page) 100%);
 }
 
 .gallery {
@@ -674,10 +663,9 @@ html {
     height: 100%;
 }
 
-/* Testimonials Section */
 .testimonials-section {
     padding-block: var(--space-24);
-    background-color: var(--bg-surface);
+    background: linear-gradient(160deg, var(--bg-surface) 0%, var(--bg-raised) 50%, var(--bg-surface) 100%);
 }
 
 .testimonials {
@@ -777,10 +765,9 @@ html {
     color: var(--text-secondary);
 }
 
-/* Contact Section */
 .contact-section {
     padding-block: var(--space-24);
-    background-color: var(--bg-page);
+    background: linear-gradient(180deg, var(--bg-page) 0%, var(--bg-surface) 100%);
 }
 
 .contact {
@@ -866,7 +853,6 @@ html {
     line-height: var(--leading-relaxed);
 }
 
-/* Footer */
 .footer {
     background-color: var(--bg-surface);
     border-top: 1px solid var(--border);
@@ -949,44 +935,6 @@ html {
     color: var(--text-secondary);
 }
 
-.reveal {
-    opacity: 0;
-    transform: translateY(12px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.reveal-rotate {
-    opacity: 0;
-    transform: translateY(10px) rotate(-0.5deg);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.reveal-rotate.visible {
-    opacity: 1;
-    transform: translateY(0) rotate(0deg);
-}
-
-.reveal-scale {
-    opacity: 0;
-    transform: scale(0.98);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.reveal-scale.visible {
-    opacity: 1;
-    transform: scale(1);
-}
-
-.reveal-delay-1 { transition-delay: 0.05s; }
-.reveal-delay-2 { transition-delay: 0.1s; }
-.reveal-delay-3 { transition-delay: 0.15s; }
-.reveal-delay-4 { transition-delay: 0.2s; }
-
 .scroll-top {
     position: fixed;
     bottom: var(--space-8);
@@ -1017,7 +965,6 @@ html {
     background-color: var(--brand-dim);
 }
 
-/* Media Queries */
 @media(max-width: 1024px) {
     .hero-section {
         padding-top: var(--space-16);

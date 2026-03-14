@@ -384,7 +384,7 @@ html {
 
 .about-section {
     padding-block: var(--space-24);
-    background: linear-gradient(160deg, var(--bg-surface) 0%, var(--bg-raised) 100%);
+    background: linear-gradient(160deg, #f3ede3 0%, #e4d9c8 100%);
 }
 
 .about {
@@ -442,7 +442,7 @@ html {
 
 .menu-section {
     padding-block: var(--space-24);
-    background: linear-gradient(180deg, var(--bg-page) 0%, var(--bg-surface) 100%);
+    background: linear-gradient(180deg, #faf7f2 0%, #e8ddd0 100%);
 }
 
 .menu {
@@ -547,7 +547,7 @@ html {
 
 .experience-section {
     padding-block: var(--space-24);
-    background: linear-gradient(180deg, var(--bg-surface) 0%, var(--bg-raised) 100%);
+    background: linear-gradient(180deg, #f5efe6 0%, #d6c9b5 100%);
 }
 
 .experience {
@@ -605,7 +605,7 @@ html {
 
 .gallery-section {
     padding-block: var(--space-24);
-    background: linear-gradient(180deg, var(--bg-page) 0%, var(--bg-surface) 60%, var(--bg-page) 100%);
+    background: linear-gradient(180deg, #faf7f2 0%, #e8ddd0 50%, #faf7f2 100%);
 }
 
 .gallery {
@@ -665,7 +665,7 @@ html {
 
 .testimonials-section {
     padding-block: var(--space-24);
-    background: linear-gradient(160deg, var(--bg-surface) 0%, var(--bg-raised) 50%, var(--bg-surface) 100%);
+    background: linear-gradient(160deg, #f0e8dc 0%, #d6c9b5 50%, #f0e8dc 100%);
 }
 
 .testimonials {
@@ -767,7 +767,7 @@ html {
 
 .contact-section {
     padding-block: var(--space-24);
-    background: linear-gradient(180deg, var(--bg-page) 0%, var(--bg-surface) 100%);
+    background: linear-gradient(180deg, #faf7f2 0%, #ede4d8 100%);
 }
 
 .contact {

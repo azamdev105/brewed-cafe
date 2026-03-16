@@ -522,7 +522,7 @@ html {
 .menu-card__top {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
 }
 
 .menu-card__title {

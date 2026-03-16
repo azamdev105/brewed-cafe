@@ -117,6 +117,7 @@ html {
   --text-primary:   #1c1410;
   --text-secondary: #7a6355;
   --text-tertiary:  #9e8778;
+  --text-on-light:  #3d2e24;
 
   --border:       #ddd3c5;
   --border-light: rgba(28, 20, 16, 0.08);
@@ -521,7 +522,7 @@ html {
 .menu-card__top {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
 }
 
 .menu-card__title {
@@ -535,13 +536,13 @@ html {
     font-family: var(--font-body);
     font-size: var(--text-base);
     font-weight: var(--weight-bold);
-    color: var(--brand);
+    color: var(--neutral-900);
 }
 
 .menu-card__description {
     font-family: var(--font-body);
     font-size: var(--text-sm);
-    color: var(--text-secondary);
+    color: var(--text-on-light);
     line-height: var(--leading-relaxed);
 }
 
@@ -598,7 +599,7 @@ html {
 .experience__text {
     font-family: var(--font-body);
     font-size: var(--text-base);
-    color: var(--text-secondary);
+    color: var(--text-on-light);
     line-height: var(--leading-relaxed);
     max-width: 30ch;
 }
@@ -728,7 +729,7 @@ html {
 .testimonial-card__quote {
     font-family: var(--font-body);
     font-size: var(--text-base);
-    color: var(--text-secondary);
+    color: var(--text-on-light);
     line-height: var(--leading-relaxed);
     font-style: italic;
 }
@@ -762,7 +763,7 @@ html {
 .testimonial-card__role {
     font-family: var(--font-body);
     font-size: var(--text-xs);
-    color: var(--text-secondary);
+    color: var(--text-on-light);
 }
 
 .contact-section {
